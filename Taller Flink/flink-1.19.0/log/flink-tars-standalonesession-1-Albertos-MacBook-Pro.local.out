@@ -1,0 +1,4 @@
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by org.apache.flink.core.security.FlinkSecurityManager (file:/Users/tars/Desktop/UNIVERSITY/7mo%20Semestre/Procesamiento%20de%20Datos%20a%20Gran%20Escala/Talleres/Talleres-ProcesamientoDeDatosAGranEscala/Taller%20Flink/flink-1.19.0/lib/flink-dist-1.19.0.jar)
+WARNING: Please consider reporting this to the maintainers of org.apache.flink.core.security.FlinkSecurityManager
+WARNING: System::setSecurityManager will be removed in a future release
