@@ -1,0 +1,144 @@
+2024-04-03 08:57:41,755 INFO  org.apache.flink.runtime.rpc.pekko.PekkoRpcServiceUtils      [] - Trying to start actor system, external address localhost:6123, bind address localhost:6123.
+2024-04-03 08:57:42,047 INFO  org.apache.pekko.event.slf4j.Slf4jLogger                     [] - Slf4jLogger started
+2024-04-03 08:57:42,062 INFO  org.apache.pekko.remote.RemoteActorRefProvider               [] - Pekko Cluster not in use - enabling unsafe features anyway because `pekko.remote.use-unsafe-remote-features-outside-cluster` has been enabled.
+2024-04-03 08:57:42,062 INFO  org.apache.pekko.remote.Remoting                             [] - Starting remoting
+2024-04-03 08:57:42,160 INFO  org.apache.pekko.remote.Remoting                             [] - Remoting started; listening on addresses :[pekko.tcp://flink@localhost:6123]
+2024-04-03 08:57:42,208 INFO  org.apache.flink.runtime.rpc.pekko.PekkoRpcServiceUtils      [] - Actor system started at pekko.tcp://flink@localhost:6123
+2024-04-03 08:57:42,217 INFO  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager [] - Loading delegation token providers
+2024-04-03 08:57:42,219 INFO  org.apache.flink.runtime.security.token.hadoop.HadoopFSDelegationTokenProvider [] - Hadoop FS is not available (not packaged with this application): NoClassDefFoundError : "org/apache/hadoop/conf/Configuration".
+2024-04-03 08:57:42,219 INFO  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager [] - Delegation token provider hadoopfs loaded and initialized
+2024-04-03 08:57:42,220 INFO  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager [] - Delegation token provider hbase loaded and initialized
+2024-04-03 08:57:42,220 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID found, reusing it: metrics-statsd
+2024-04-03 08:57:42,220 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID found, reusing it: metrics-prometheus
+2024-04-03 08:57:42,220 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID found, reusing it: metrics-graphite
+2024-04-03 08:57:42,220 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID found, reusing it: external-resource-gpu
+2024-04-03 08:57:42,220 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID found, reusing it: metrics-jmx
+2024-04-03 08:57:42,220 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID found, reusing it: metrics-influx
+2024-04-03 08:57:42,220 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID found, reusing it: metrics-slf4j
+2024-04-03 08:57:42,220 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID found, reusing it: metrics-datadog
+2024-04-03 08:57:42,220 INFO  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager [] - Delegation token providers loaded successfully
+2024-04-03 08:57:42,220 INFO  org.apache.flink.runtime.security.token.DelegationTokenReceiverRepository [] - Loading delegation token receivers
+2024-04-03 08:57:42,221 INFO  org.apache.flink.runtime.security.token.DelegationTokenReceiverRepository [] - Delegation token receiver hadoopfs loaded and initialized
+2024-04-03 08:57:42,222 INFO  org.apache.flink.runtime.security.token.DelegationTokenReceiverRepository [] - Delegation token receiver hbase loaded and initialized
+2024-04-03 08:57:42,222 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID found, reusing it: metrics-statsd
+2024-04-03 08:57:42,222 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID found, reusing it: metrics-prometheus
+2024-04-03 08:57:42,222 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID found, reusing it: metrics-graphite
+2024-04-03 08:57:42,222 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID found, reusing it: external-resource-gpu
+2024-04-03 08:57:42,222 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID found, reusing it: metrics-jmx
+2024-04-03 08:57:42,222 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID found, reusing it: metrics-influx
+2024-04-03 08:57:42,222 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID found, reusing it: metrics-slf4j
+2024-04-03 08:57:42,222 INFO  org.apache.flink.core.plugin.DefaultPluginManager            [] - Plugin loader with ID found, reusing it: metrics-datadog
+2024-04-03 08:57:42,222 INFO  org.apache.flink.runtime.security.token.DelegationTokenReceiverRepository [] - Delegation token receivers loaded successfully
+2024-04-03 08:57:42,222 INFO  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager [] - Checking provider and receiver instances consistency
+2024-04-03 08:57:42,222 INFO  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager [] - Provider and receiver instances are consistent
+2024-04-03 08:57:42,222 INFO  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager [] - Obtaining delegation tokens
+2024-04-03 08:57:42,223 INFO  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager [] - Delegation tokens obtained successfully
+2024-04-03 08:57:42,223 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager [] - No tokens obtained so skipping notifications
+2024-04-03 08:57:42,236 INFO  org.apache.flink.runtime.blob.BlobServer                     [] - Created BLOB server storage directory /var/folders/yp/r6yl8sps2nzfbv700fppvjf00000gn/T/jm_4d7835fe9bd049773b7d11acc144ca10/blobStorage
+2024-04-03 08:57:42,238 INFO  org.apache.flink.runtime.blob.BlobServer                     [] - Started BLOB server at 127.0.0.1:59134 - max concurrent requests: 50 - max backlog: 1000
+2024-04-03 08:57:42,246 INFO  org.apache.flink.runtime.metrics.MetricRegistryImpl          [] - No metrics reporter configured, no metrics will be exposed/reported.
+2024-04-03 08:57:42,246 INFO  org.apache.flink.runtime.metrics.MetricRegistryImpl          [] - No trace reporter configured, no metrics will be exposed/reported.
+2024-04-03 08:57:42,249 INFO  org.apache.flink.runtime.rpc.pekko.PekkoRpcServiceUtils      [] - Trying to start actor system, external address localhost:0, bind address localhost:0.
+2024-04-03 08:57:42,258 INFO  org.apache.pekko.event.slf4j.Slf4jLogger                     [] - Slf4jLogger started
+2024-04-03 08:57:42,260 INFO  org.apache.pekko.remote.RemoteActorRefProvider               [] - Pekko Cluster not in use - enabling unsafe features anyway because `pekko.remote.use-unsafe-remote-features-outside-cluster` has been enabled.
+2024-04-03 08:57:42,260 INFO  org.apache.pekko.remote.Remoting                             [] - Starting remoting
+2024-04-03 08:57:42,264 INFO  org.apache.pekko.remote.Remoting                             [] - Remoting started; listening on addresses :[pekko.tcp://flink-metrics@localhost:59135]
+2024-04-03 08:57:42,269 INFO  org.apache.flink.runtime.rpc.pekko.PekkoRpcServiceUtils      [] - Actor system started at pekko.tcp://flink-metrics@localhost:59135
+2024-04-03 08:57:42,276 INFO  org.apache.flink.runtime.rpc.pekko.PekkoRpcService           [] - Starting RPC endpoint for org.apache.flink.runtime.metrics.dump.MetricQueryService at pekko://flink-metrics/user/rpc/MetricQueryService .
+2024-04-03 08:57:42,291 INFO  org.apache.flink.runtime.dispatcher.FileExecutionGraphInfoStore [] - Initializing FileExecutionGraphInfoStore: Storage directory /var/folders/yp/r6yl8sps2nzfbv700fppvjf00000gn/T/executionGraphStore-bcec9e5e-dacc-4058-8210-ecaa82ecd3ae, expiration time 3600000, maximum cache size 52428800 bytes.
+2024-04-03 08:57:42,332 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint   [] - Upload directory /var/folders/yp/r6yl8sps2nzfbv700fppvjf00000gn/T/flink-web-334e1bd7-8785-4eae-950d-62d94537db76/flink-web-upload does not exist. 
+2024-04-03 08:57:42,333 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint   [] - Created directory /var/folders/yp/r6yl8sps2nzfbv700fppvjf00000gn/T/flink-web-334e1bd7-8785-4eae-950d-62d94537db76/flink-web-upload for file uploads.
+2024-04-03 08:57:42,335 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint   [] - Starting rest endpoint.
+2024-04-03 08:57:42,486 INFO  org.apache.flink.runtime.webmonitor.WebMonitorUtils          [] - Determined location of main cluster component log file: /Users/tars/Desktop/UNIVERSITY/7mo Semestre/Procesamiento de Datos a Gran Escala/Talleres/Talleres-ProcesamientoDeDatosAGranEscala/Taller Flink/flink-1.19.0/log/flink-tars-standalonesession-0-Albertos-MacBook-Pro.local.log
+2024-04-03 08:57:42,486 INFO  org.apache.flink.runtime.webmonitor.WebMonitorUtils          [] - Determined location of main cluster component stdout file: /Users/tars/Desktop/UNIVERSITY/7mo Semestre/Procesamiento de Datos a Gran Escala/Talleres/Talleres-ProcesamientoDeDatosAGranEscala/Taller Flink/flink-1.19.0/log/flink-tars-standalonesession-0-Albertos-MacBook-Pro.local.out
+2024-04-03 08:57:42,548 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint   [] - Rest endpoint listening at 127.0.0.1:8081
+2024-04-03 08:57:42,549 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint   [] - http://127.0.0.1:8081 was granted leadership with leaderSessionID=00000000-0000-0000-0000-000000000000
+2024-04-03 08:57:42,549 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint   [] - Web frontend listening at http://127.0.0.1:8081.
+2024-04-03 08:57:42,557 INFO  org.apache.flink.runtime.dispatcher.runner.DefaultDispatcherRunner [] - DefaultDispatcherRunner was granted leadership with leader id 00000000-0000-0000-0000-000000000000. Creating new DispatcherLeaderProcess.
+2024-04-03 08:57:42,559 INFO  org.apache.flink.runtime.dispatcher.runner.SessionDispatcherLeaderProcess [] - Start SessionDispatcherLeaderProcess.
+2024-04-03 08:57:42,559 INFO  org.apache.flink.runtime.resourcemanager.ResourceManagerServiceImpl [] - Starting resource manager service.
+2024-04-03 08:57:42,560 INFO  org.apache.flink.runtime.resourcemanager.ResourceManagerServiceImpl [] - Resource manager service is granted leadership with session id 00000000-0000-0000-0000-000000000000.
+2024-04-03 08:57:42,560 INFO  org.apache.flink.runtime.dispatcher.runner.SessionDispatcherLeaderProcess [] - Recover all persisted job graphs that are not finished, yet.
+2024-04-03 08:57:42,561 INFO  org.apache.flink.runtime.dispatcher.runner.SessionDispatcherLeaderProcess [] - Successfully recovered 0 persisted job graphs.
+2024-04-03 08:57:42,569 INFO  org.apache.flink.runtime.rpc.pekko.PekkoRpcService           [] - Starting RPC endpoint for org.apache.flink.runtime.dispatcher.StandaloneDispatcher at pekko://flink/user/rpc/dispatcher_0 .
+2024-04-03 08:57:42,571 INFO  org.apache.flink.runtime.rpc.pekko.PekkoRpcService           [] - Starting RPC endpoint for org.apache.flink.runtime.resourcemanager.StandaloneResourceManager at pekko://flink/user/rpc/resourcemanager_1 .
+2024-04-03 08:57:42,582 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Starting the resource manager.
+2024-04-03 08:57:42,586 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.FineGrainedSlotManager [] - Starting the slot manager.
+2024-04-03 08:57:42,586 INFO  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager [] - Starting tokens update task
+2024-04-03 08:57:42,586 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager [] - No tokens obtained so skipping notifications
+2024-04-03 08:57:42,586 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager [] - Tokens update task not started because either no tokens obtained or none of the tokens specified its renewal date
+2024-04-03 08:57:43,337 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registering TaskManager with ResourceID localhost:59136-321452 (pekko.tcp://flink@localhost:59136/user/rpc/taskmanager_0) at ResourceManager
+2024-04-03 08:57:43,349 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.FineGrainedSlotManager [] - Registering task executor localhost:59136-321452 under 09ec9465443d072c16368228c7dc308b at the slot manager.
+2024-04-03 08:58:40,000 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registering TaskManager with ResourceID localhost:59151-f8a4d8 (pekko.tcp://flink@localhost:59151/user/rpc/taskmanager_0) at ResourceManager
+2024-04-03 08:58:40,007 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.FineGrainedSlotManager [] - Registering task executor localhost:59151-f8a4d8 under 3d28158c7ea23ffc47f538c7cc7c4243 at the slot manager.
+2024-04-03 09:00:07,860 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Received JobGraph submission 'WordCount' (17be558ea8005cc1409f36779101d820).
+2024-04-03 09:00:07,861 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Submitting job 'WordCount' (17be558ea8005cc1409f36779101d820).
+2024-04-03 09:00:07,871 INFO  org.apache.flink.runtime.jobmaster.JobMasterServiceLeadershipRunner [] - JobMasterServiceLeadershipRunner for job 17be558ea8005cc1409f36779101d820 was granted leadership with leader id 00000000-0000-0000-0000-000000000000. Creating new JobMasterServiceProcess.
+2024-04-03 09:00:07,876 INFO  org.apache.flink.runtime.rpc.pekko.PekkoRpcService           [] - Starting RPC endpoint for org.apache.flink.runtime.jobmaster.JobMaster at pekko://flink/user/rpc/jobmanager_2 .
+2024-04-03 09:00:07,880 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Initializing job 'WordCount' (17be558ea8005cc1409f36779101d820).
+2024-04-03 09:00:07,894 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Using restart back off time strategy NoRestartBackoffTimeStrategy for WordCount (17be558ea8005cc1409f36779101d820).
+2024-04-03 09:00:07,913 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Created execution graph 05502ce43ccf973c310fb554f979feb6 for job 17be558ea8005cc1409f36779101d820.
+2024-04-03 09:00:07,921 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Running initialization on master for job WordCount (17be558ea8005cc1409f36779101d820).
+2024-04-03 09:00:07,921 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Successfully ran initialization on master in 0 ms.
+2024-04-03 09:00:07,949 INFO  org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopology [] - Built 1 new pipelined regions in 0 ms, total 1 pipelined regions currently.
+2024-04-03 09:00:07,952 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - State backend is set to heap memory org.apache.flink.runtime.state.hashmap.HashMapStateBackend@52e17f84
+2024-04-03 09:00:07,952 INFO  org.apache.flink.runtime.state.StateBackendLoader            [] - State backend loader loads the state backend as HashMapStateBackend
+2024-04-03 09:00:07,953 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Checkpoint storage is set to 'jobmanager'
+2024-04-03 09:00:07,969 INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator    [] - No checkpoint found during restore.
+2024-04-03 09:00:07,972 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Using failover strategy org.apache.flink.runtime.executiongraph.failover.RestartPipelinedRegionFailoverStrategy@321a6cd for WordCount (17be558ea8005cc1409f36779101d820).
+2024-04-03 09:00:07,976 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Starting execution of job 'WordCount' (17be558ea8005cc1409f36779101d820) under job master id 00000000000000000000000000000000.
+2024-04-03 09:00:07,977 INFO  org.apache.flink.runtime.source.coordinator.SourceCoordinator [] - Starting split enumerator for source Source: in-memory-input.
+2024-04-03 09:00:07,978 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Starting scheduling with scheduling strategy [org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategy]
+2024-04-03 09:00:07,978 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job WordCount (17be558ea8005cc1409f36779101d820) switched from state CREATED to RUNNING.
+2024-04-03 09:00:07,979 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: in-memory-input -> tokenizer (1/1) (05502ce43ccf973c310fb554f979feb6_cbc357ccb763df2852fee8c4fc7d55f2_0_0) switched from CREATED to SCHEDULED.
+2024-04-03 09:00:07,979 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> file-sink: Writer -> file-sink: Committer (1/1) (05502ce43ccf973c310fb554f979feb6_90bea66de1c231edf33913ecd54406c1_0_0) switched from CREATED to SCHEDULED.
+2024-04-03 09:00:07,985 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Connecting to ResourceManager pekko.tcp://flink@localhost:6123/user/rpc/resourcemanager_*(00000000000000000000000000000000)
+2024-04-03 09:00:07,986 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Resolved ResourceManager address, beginning registration
+2024-04-03 09:00:07,988 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registering job manager 00000000000000000000000000000000@pekko.tcp://flink@localhost:6123/user/rpc/jobmanager_2 for job 17be558ea8005cc1409f36779101d820.
+2024-04-03 09:00:07,990 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Registered job manager 00000000000000000000000000000000@pekko.tcp://flink@localhost:6123/user/rpc/jobmanager_2 for job 17be558ea8005cc1409f36779101d820.
+2024-04-03 09:00:07,991 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - JobManager successfully registered at ResourceManager, leader id: 00000000000000000000000000000000.
+2024-04-03 09:00:07,992 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.FineGrainedSlotManager [] - Received resource requirements from job 17be558ea8005cc1409f36779101d820: [ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=1}]
+2024-04-03 09:00:08,055 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.FineGrainedSlotManager [] - Matching resource requirements against available resources.
+Missing resources:
+	 Job 17be558ea8005cc1409f36779101d820
+		ResourceRequirement{resourceProfile=ResourceProfile{UNKNOWN}, numberOfRequiredSlots=1}
+Current resources:
+	TaskManager localhost:59136-321452
+		Available: ResourceProfile{cpuCores=1, taskHeapMemory=384.000mb (402653174 bytes), taskOffHeapMemory=0 bytes, managedMemory=512.000mb (536870920 bytes), networkMemory=128.000mb (134217730 bytes)}
+		Total:     ResourceProfile{cpuCores=1, taskHeapMemory=384.000mb (402653174 bytes), taskOffHeapMemory=0 bytes, managedMemory=512.000mb (536870920 bytes), networkMemory=128.000mb (134217730 bytes)}
+	TaskManager localhost:59151-f8a4d8
+		Available: ResourceProfile{cpuCores=1, taskHeapMemory=384.000mb (402653174 bytes), taskOffHeapMemory=0 bytes, managedMemory=512.000mb (536870920 bytes), networkMemory=128.000mb (134217730 bytes)}
+		Total:     ResourceProfile{cpuCores=1, taskHeapMemory=384.000mb (402653174 bytes), taskOffHeapMemory=0 bytes, managedMemory=512.000mb (536870920 bytes), networkMemory=128.000mb (134217730 bytes)}
+2024-04-03 09:00:08,057 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DefaultSlotStatusSyncer [] - Starting allocation of slot 7a873e0e206e38e53663903fbbec7ecd from localhost:59136-321452 for job 17be558ea8005cc1409f36779101d820 with resource profile ResourceProfile{cpuCores=1, taskHeapMemory=384.000mb (402653174 bytes), taskOffHeapMemory=0 bytes, managedMemory=512.000mb (536870920 bytes), networkMemory=128.000mb (134217730 bytes)}.
+2024-04-03 09:00:08,091 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: in-memory-input -> tokenizer (1/1) (05502ce43ccf973c310fb554f979feb6_cbc357ccb763df2852fee8c4fc7d55f2_0_0) switched from SCHEDULED to DEPLOYING.
+2024-04-03 09:00:08,091 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying Source: in-memory-input -> tokenizer (1/1) (attempt #0) with attempt id 05502ce43ccf973c310fb554f979feb6_cbc357ccb763df2852fee8c4fc7d55f2_0_0 and vertex id cbc357ccb763df2852fee8c4fc7d55f2_0 to localhost:59136-321452 @ localhost (dataPort=59138) with allocation id 7a873e0e206e38e53663903fbbec7ecd
+2024-04-03 09:00:08,093 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> file-sink: Writer -> file-sink: Committer (1/1) (05502ce43ccf973c310fb554f979feb6_90bea66de1c231edf33913ecd54406c1_0_0) switched from SCHEDULED to DEPLOYING.
+2024-04-03 09:00:08,093 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Deploying counter -> file-sink: Writer -> file-sink: Committer (1/1) (attempt #0) with attempt id 05502ce43ccf973c310fb554f979feb6_90bea66de1c231edf33913ecd54406c1_0_0 and vertex id 90bea66de1c231edf33913ecd54406c1_0 to localhost:59136-321452 @ localhost (dataPort=59138) with allocation id 7a873e0e206e38e53663903fbbec7ecd
+2024-04-03 09:00:08,164 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: in-memory-input -> tokenizer (1/1) (05502ce43ccf973c310fb554f979feb6_cbc357ccb763df2852fee8c4fc7d55f2_0_0) switched from DEPLOYING to INITIALIZING.
+2024-04-03 09:00:08,165 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> file-sink: Writer -> file-sink: Committer (1/1) (05502ce43ccf973c310fb554f979feb6_90bea66de1c231edf33913ecd54406c1_0_0) switched from DEPLOYING to INITIALIZING.
+2024-04-03 09:00:08,214 INFO  org.apache.flink.runtime.source.coordinator.SourceCoordinator [] - Source Source: in-memory-input registering reader for parallel task 0 (#0) @ localhost
+2024-04-03 09:00:08,215 INFO  org.apache.flink.runtime.source.coordinator.SourceCoordinator [] - Source Source: in-memory-input received split request from parallel task 0 (#0)
+2024-04-03 09:00:08,220 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: in-memory-input -> tokenizer (1/1) (05502ce43ccf973c310fb554f979feb6_cbc357ccb763df2852fee8c4fc7d55f2_0_0) switched from INITIALIZING to RUNNING.
+2024-04-03 09:00:08,227 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> file-sink: Writer -> file-sink: Committer (1/1) (05502ce43ccf973c310fb554f979feb6_90bea66de1c231edf33913ecd54406c1_0_0) switched from INITIALIZING to RUNNING.
+2024-04-03 09:00:08,229 INFO  org.apache.flink.runtime.source.coordinator.SourceCoordinator [] - Source Source: in-memory-input received split request from parallel task 0 (#0)
+2024-04-03 09:00:08,241 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Source: in-memory-input -> tokenizer (1/1) (05502ce43ccf973c310fb554f979feb6_cbc357ccb763df2852fee8c4fc7d55f2_0_0) switched from RUNNING to FINISHED.
+2024-04-03 09:00:08,250 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - counter -> file-sink: Writer -> file-sink: Committer (1/1) (05502ce43ccf973c310fb554f979feb6_90bea66de1c231edf33913ecd54406c1_0_0) switched from RUNNING to FINISHED.
+2024-04-03 09:00:08,251 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.FineGrainedSlotManager [] - Clearing resource requirements of job 17be558ea8005cc1409f36779101d820
+2024-04-03 09:00:08,252 INFO  org.apache.flink.runtime.executiongraph.ExecutionGraph       [] - Job WordCount (17be558ea8005cc1409f36779101d820) switched from state RUNNING to FINISHED.
+2024-04-03 09:00:08,252 INFO  org.apache.flink.runtime.checkpoint.CheckpointCoordinator    [] - Stopping checkpoint coordinator for job 17be558ea8005cc1409f36779101d820.
+2024-04-03 09:00:08,255 INFO  org.apache.flink.runtime.dispatcher.StandaloneDispatcher     [] - Job 17be558ea8005cc1409f36779101d820 reached terminal state FINISHED.
+2024-04-03 09:00:08,265 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Stopping the JobMaster for job 'WordCount' (17be558ea8005cc1409f36779101d820).
+2024-04-03 09:00:08,267 INFO  org.apache.flink.runtime.source.coordinator.SourceCoordinator [] - Closing SourceCoordinator for source Source: in-memory-input.
+2024-04-03 09:00:08,267 INFO  org.apache.flink.runtime.source.coordinator.SourceCoordinator [] - Source coordinator for source Source: in-memory-input closed.
+2024-04-03 09:00:08,267 INFO  org.apache.flink.runtime.checkpoint.StandaloneCompletedCheckpointStore [] - Shutting down
+2024-04-03 09:00:08,267 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Disconnect TaskExecutor localhost:59136-321452 because: Stopping JobMaster for job 'WordCount' (17be558ea8005cc1409f36779101d820).
+2024-04-03 09:00:08,268 INFO  org.apache.flink.runtime.jobmaster.slotpool.DefaultDeclarativeSlotPool [] - Releasing slot [7a873e0e206e38e53663903fbbec7ecd].
+2024-04-03 09:00:08,268 INFO  org.apache.flink.runtime.jobmaster.JobMaster                 [] - Close ResourceManager connection 4d7835fe9bd049773b7d11acc144ca10: Stopping JobMaster for job 'WordCount' (17be558ea8005cc1409f36779101d820).
+2024-04-03 09:00:08,269 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Disconnect job manager 00000000000000000000000000000000@pekko.tcp://flink@localhost:6123/user/rpc/jobmanager_2 for job 17be558ea8005cc1409f36779101d820 from the resource manager.
+2024-04-03 09:00:08,275 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.DefaultSlotStatusSyncer [] - Freeing slot 7a873e0e206e38e53663903fbbec7ecd.
+2024-04-03 09:01:41,325 INFO  org.apache.flink.runtime.resourcemanager.StandaloneResourceManager [] - Closing TaskExecutor connection localhost:59151-f8a4d8 because: The TaskExecutor is shutting down.
+2024-04-03 09:01:41,326 INFO  org.apache.flink.runtime.resourcemanager.slotmanager.FineGrainedSlotManager [] - Unregistering task executor 3d28158c7ea23ffc47f538c7cc7c4243 from the slot manager.
+2024-04-03 09:01:41,367 WARN  org.apache.pekko.remote.transport.netty.NettyTransport       [] - Remote connection to [/127.0.0.1:59154] failed with java.net.SocketException: Connection reset
+2024-04-03 09:14:29,240 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - RECEIVED SIGNAL 15: SIGTERM. Shutting down as requested.
+2024-04-03 09:14:29,254 INFO  org.apache.flink.runtime.entrypoint.ClusterEntrypoint        [] - Shutting StandaloneSessionClusterEntrypoint down with application status UNKNOWN. Diagnostics Cluster entrypoint has been closed externally..
+2024-04-03 09:14:29,266 INFO  org.apache.flink.runtime.dispatcher.DispatcherRestEndpoint   [] - Shutting down rest endpoint.
